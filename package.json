@@ -1,9 +1,11 @@
 {
-  "name": "react-keyed-file-browser",
+  "name": "@fibotax/react-keyed-file-browser",
   "version": "1.6.0",
   "description": "Folder based file browser given a flat keyed list of objects, powered by React.",
   "main": "index.js",
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "publish-demo": "git branch -D gh-pages; git push origin --delete gh-pages; git checkout -b gh-pages; cd demo-site; yarn; npm run build; cd ..; git add .; git add -f demo-site/dist; git add -f demo-site/node_modules/uptick-demo-site/dist; git commit -m \"Demo site build\"; git push origin gh-pages; git checkout master; git push origin `git subtree split --prefix demo-site gh-pages`:gh-pages --force;",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uptick/react-keyed-file-browser.git"
+    "url": "git+https://github.com/fibotax/react-keyed-file-browser.git"
   },
   "keywords": [
     "react",
@@ -28,9 +30,9 @@
   "author": "Uptick Pty Ltd",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/uptick/react-keyed-file-browser/issues"
+    "url": "https://github.com/fibotax/react-keyed-file-browser/issues"
   },
-  "homepage": "https://github.com/uptick/react-keyed-file-browser#readme",
+  "homepage": "https://github.com/fibotax/react-keyed-file-browser#readme",
   "dependencies": {
     "classnames": "^2.2.3",
     "moment": "^2.17.0",
